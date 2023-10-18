@@ -10,17 +10,17 @@
 using namespace std;
 
 void FillArray(double Array[], int SizeArray) {
-  for (int IndexArray = 0; IndexArray < SizeArray; ++IndexArray) {
-    cout << IndexArray + 1 << ". ";
-    cin  >> Array[IndexArray];
+  for (int NumbersArray = 0; NumbersArray < SizeArray; ++NumbersArray) {
+    cout << NumbersArray + 1 << ". ";
+    cin  >> Array[NumbersArray];
   }
 }
 
 void OutArray(double Array[], int SizeArray) {
   cout << "[ ";
   
-  for (int IndexArray = 0; IndexArray < SizeArray; ++IndexArray) {
-    cout << Array[IndexArray] << " ";
+  for (int NumbersArray = 0; NumbersArray < SizeArray; ++NumbersArray) {
+    cout << Array[NumbersArray] << " ";
   }
   
   cout << "]";
@@ -29,8 +29,8 @@ void OutArray(double Array[], int SizeArray) {
 int CountElements(double Array[], int SizeArray, double Condition) {
   int Result = 0;
   
-  for (int IndexArray = 0; IndexArray < SizeArray; ++IndexArray) {
-    if (Array[IndexArray] < Condition) {
+  for (int NumbersArray = 0; NumbersArray < SizeArray; ++NumbersArray) {
+    if (Array[NumbersArray] < Condition) {
       Result += 1;
     }
   }
